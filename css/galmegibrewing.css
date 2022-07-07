@@ -1,0 +1,432 @@
+* {
+    outline: 1px solid rgb(210, 69, 69);
+}
+
+/* ----- HEADER ----- */
+
+header {
+    position: absolute;
+    inset: 0 auto auto 0;
+    width: 100%;
+    line-height: 130px;
+    font-size: 17px;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    z-index: 999;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+header .container h1>a>img {
+    margin-left: 15px;
+    width: 50%;
+}
+
+header .container nav>ul {
+    margin-right: 15px;
+    display: flex;
+    gap: 40px;
+}
+
+header .container nav>ul>li>a::after {
+    position: relative;
+    bottom: 40%;
+    display: block;
+    content: "";
+    width: 0;
+    /* width: 100%; */
+    height: 2px;
+    background: #ffcc01;
+    transition: 0.4s;
+}
+
+header .container nav>ul>li>a:hover {
+    position: relative;
+    color: #ffcc01;
+    transition: 0.4s;
+}
+
+header .container nav>ul>li>a:hover::after {
+    width: 100%;
+    transition: 0.4s;
+}
+
+/* ----- SLIDER ----- */
+
+main .mainVisual .mainSlider figure>img {
+    width: 100%;
+}
+
+/* ----- ABOUT GALMEGI ----- */
+
+main .aboutGalmegi {
+    padding: 100px 0;
+}
+
+main .aboutGalmegi .container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+main .aboutGalmegi .container figure {
+    text-align: center;
+}
+
+main .aboutGalmegi .container figure>img {
+    width: 25%;
+    margin: 0 auto 50px auto;
+}
+
+main .aboutGalmegi .container h2 {
+    font-size: 25px;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 10px;
+    margin-bottom: 50px;
+}
+
+main .aboutGalmegi .container .galmegiStory {
+    width: 1120px;
+    margin: 0 auto 30px auto;
+}
+
+main .aboutGalmegi .container .galmegiStory p {
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+main .aboutGalmegi .container .galmegiStory .kor {
+    margin-bottom: 10px;
+}
+
+main .aboutGalmegi .container .galmegiStory .kor::after {
+    display: block;
+    content: "";
+    width: 1120px;
+    height: 2px;
+    background: #ffcc01;
+    margin: 20px auto;
+}
+
+main .aboutGalmegi .container .galmegiStory .eng {
+    margin-bottom: 10px;
+    color: rgb(45, 45, 45);
+}
+
+main .aboutGalmegi .container .galmegiMovie {
+    width: 1120px;
+    margin: 0 auto;
+    position: relative;
+    padding-bottom: 56.25%;
+}
+
+main .aboutGalmegi .container .galmegiMovie iframe {
+    position: absolute;
+    inset: 0 0 0 0;
+}
+
+/* ----- BEER HIGHLIGHT ----- */
+
+main .beerHighlight {
+    padding: 100px 0;
+    background: #3c3c3c;
+}
+
+main .beerHighlight .container {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main .beerHighlight .container h2 {
+    font-size: 60px;
+    font-weight: 700;
+    color: #ffcc01;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+main .beerHighlight .container .beerSlider {
+    /* display: flex;
+    gap: 20px; */
+    width: 1150px;
+    margin: 0 auto;
+}
+
+main .beerHighlight .container .beerSlider .beerInfo {
+    width: 300px;
+    padding: 50px 30px;
+    margin: 0 15px;
+    text-align: center;
+    background: #fff;
+    
+}
+
+main .beerHighlight .container .beerSlider .beerInfo h3 {
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+main .beerHighlight .container .beerSlider .beerInfo h4 {
+    font-size: 21px;
+    font-weight: 500;
+    color: #999;
+    margin-bottom: 10px;
+}
+
+main .beerHighlight .container .beerSlider .beerInfo h4::after{
+    display: block;
+    content: "";
+    width: 100%px;
+    height: 1px;
+    background: #d7d7d7;
+    margin: 20px auto;
+}
+
+main .beerHighlight .container .beerSlider .beerInfo .type {
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 25px;
+    color: #43956c;
+    margin-bottom: 20px;
+}
+
+main .beerHighlight .container .beerSlider .beerInfo img {
+    margin-bottom: 20px;
+}
+
+main .beerHighlight .container .beerSlider .beerInfo .taste {
+    font-size: 19px;
+    font-weight: 500;
+    line-height: 35px;
+}
+
+main .beerHighlight .container .beerSlider .beerInfo .content {
+    font-size: 19px;
+    font-weight: 300;
+    line-height: 35px;
+}
+
+/* ----- COLLABORATION ----- */
+
+main .beerCollabo {
+    padding: 100px 0;
+}
+
+main .beerCollabo .container {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main .beerCollabo .container h2 {
+    font-size: 60px;
+    font-weight: 700;
+    color: #3c3c3c;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+main .beerCollabo .container .collaboBeer .spakleBg {
+    position: relative;
+    width: 350px;
+}
+
+main .beerCollabo .container .collaboBeer figure {
+    width: 350px;
+    margin-bottom: 50px;
+}
+
+main .beerCollabo .container .collaboInfo h3 {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 40px;
+    color: #3c3c3c;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+main .beerCollabo .container .collaboInfo p:nth-child(2) {
+    width: 1120px;
+    font-size: 19px;
+    font-weight: 700;
+    line-height: 30px;
+    text-align: center;
+    color: #e3a506;
+    margin-bottom: 10px;
+    margin: 0 auto 10px auto;
+}
+
+main .beerCollabo .container .collaboInfo p:nth-child(3) {
+    width: 1120px;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 30px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+/* ----- LOCATIONS ----- */
+
+main .beerLoca {
+    padding: 100px 0;
+    background: #3c3c3c;
+}
+
+main .beerLoca .container {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main .beerLoca .container h2 {
+    font-size: 60px;
+    font-weight: 700;
+    color: #ffcc01;
+    text-align: center;
+    margin: 0 auto 50px auto;
+}
+
+main .beerLoca .container figure {
+    position: relative;
+    margin: 0 auto 30px auto;
+}
+
+main .beerLoca .container figure a {
+    display: none;
+}
+
+main .beerLoca .container figure:hover a {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1120px;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.75);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 30px auto;
+}
+
+main .beerLoca .container figure a>p {
+    width: 300px;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 80px;
+    text-align: center;
+    background: #ffcc01;
+    color: #3c3c3c;
+    border-radius: 20px;
+}
+
+main .beerLoca .container figure img {
+    width: 1120px;
+}
+
+main .beerLoca .container p {
+    width: 1120px;
+    font-size: 15px;
+    font-weight: 300;
+    color: #fff;
+}
+
+/* ----- BUSINESS & CONTACT----- */
+
+/* main .beerJoin {
+    display: flex;
+} */
+
+main .beerJoin .container{
+    display: flex;
+    padding: 100px 0;
+}
+
+main .beerJoin .container .business {
+    width: 50%;
+    text-align: right;
+    border-right: 1px solid #fff;
+    background: url(../img/gwangan.jpg) no-repeat center center/cover ;
+}
+
+main .beerJoin .container .business .box {
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 50px;
+}
+
+main .beerJoin .container .business .box h2 {
+    font-size: 50px;
+    font-weight: 700;
+    margin: 0 auto 30px auto;
+}
+
+main .beerJoin .container .business .box p {
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 35px;
+    margin: 0 auto 50px auto;
+}
+
+main .beerJoin .container .business .box a {
+    font-size: 17px;
+    font-weight: 700;
+    text-align: center;
+    background: #ffcc01;
+    padding: 5px 25px;
+    border-radius: 5px;
+}
+
+main .beerJoin .container .contact {
+    width: 50%;
+    background: url(../img/Tap.jpg) no-repeat center center/cover;
+}
+
+main .beerJoin .container .contact .box {
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 50px;
+}
+
+main .beerJoin .container .contact .box h2 {
+    font-size: 50px;
+    font-weight: 700;
+    margin: 0 auto 30px auto;
+}
+
+main .beerJoin .container .contact .box p {
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 35px;
+    margin: 0 auto 50px auto;
+}
+
+main .beerJoin .container .contact .box a {
+    font-size: 17px;
+    font-weight: 700;
+    text-align: center;
+    background: #ffcc01;
+    padding: 5px 25px;
+    border-radius: 5px;
+}
+
+/* ----- FOOTER ----- */
+
+footer {
+    padding: 100px auto;
+    background: #ffcc01;
+}
